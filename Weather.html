@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="Weather.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="aside-left">
+                <div class="aside-top">
+                    <img class="logo" src="logo.png" alt="">
+                    <p class="logo-name"><b>Weather</b><br>on the way</p>
+                </div>
+                <div class="aside-mid">
+                    <img class="icons" src="icon-1.png" alt="">
+                    <img class="icons" src="icon-2.png" alt="">
+                    <img class="icons" src="icon-3.png" alt="">
+                    <img class="icons" src="icon-4.png" alt="">
+                    <img class="icons" src="icon-5.png" alt="">
+                </div>
+                <div class="aside-bottom">
+                    <img class="icons logout" src="logout.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="box2">
+            <div class="header">
+                <div class="left-head">
+                    <img class="profile" src="profile.png" alt="">
+                    <p>Hello,<br><b>Ahmedabbas</b></p><br>
+                </div>
+                <div class="right-head">
+                    <input class="searchbar" type="text" placeholder="Search city..." aria-label="Search">
+                    <div class="circle">
+                        <img class="search-icon" src="seacrh-icon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="aside-right-top">
+                <div class="current-info">
+                    <div class="dateTime-container">
+                        <div class="time" id="time">
+                            12:30 <span id="am-pm">PM</span>
+                        </div>
+                        <div class="date" id="date">
+                            Monday, 24 May
+                        </div>
+
+                        <div class="others" id="current-weather-items">
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="place-container">
+                        <div class="time-zone" id="time-zone">
+                            Asia/kolkata
+                        </div>
+                        <div id="country" class="country">
+                            IN
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="box4">
+            <div class="card1">
+                <div class="card1-top">
+                    <img class="card1-icon" src="weather-icon.jpg" alt="">
+                    <p class="card1-head"><b>Weather</b><br><small class="city"></small></p>
+                </div>
+                <div class="card1-mid onLoading hidden">
+                    <div>
+                        <p><b class="description">Partly Cloudy</b></p>
+                    </div>
+                    <div class="card1-mid-mini temperature"><small><b>11°C</b></small></div>
+                </div>
+                <div class="card1-bottom onLoading hidden">
+                    <div class="weather-item1">
+                        <div class="pressure">Pressure</div>
+                        <div><b class="values pressure-value">121</b>mb</div>
+                    </div>
+                    <div class="weather-item1">
+                        <div class="wind">Wind Speed</div>
+                        <div><b class="values wind-value">2.25</b>km</div>
+                    </div>
+                    <div class="weather-item1">
+                        <div class="humidity">Humidity</div>
+                        <div><b class="values humidity-value">95.2</b>%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box5">
+            <div class="card2">
+                <div class="card2-top">
+                    <img class="card2-icon" src="weather-icon.jpg" alt="">
+                    <p class="card2-head"><b>Air Quality</b><br><small>Main Pollution</small></p>
+                    <input type="number" id="latitude" class="loc-input" placeholder="latitude" step="0.0001">
+                    <input type="number" id="longitude" class="loc-input" placeholder="longitude" step="0.0001">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="card2-mid">
+                    <div>
+                        <p class="card2-degree"><b class="aqi-value"></b></p>
+                    </div>
+                    <div class="card2-mid-mini"><small><b>AQI</b></small></div>
+                </div>
+                <div class="bottom-box2">
+                    <div class="card2-bottom">
+                        <div class="card2-box good">Good
+                        </div>
+                        <div class="card2-box standard">Standard
+                        </div>
+                        <div class="card2-box hazardous">Hazardous
+                        </div>
+                    </div>
+                    <div class="lines"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box6">
+            <div class="aside-right-bottom">
+                <div class="future-forecast">
+                    <div class="today" id="current-temp">
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                        <div class="other">
+                            <div class="day">Monday</div>
+                            <div class="temp">Night - 25.6°C</div>
+                            <div class="temp">Day - 44.6°C</div>
+                        </div>
+                    </div>
+
+                    <div class="weather-forecast" id="weather-forecast">
+                        <div class="weather-forecast-item">
+                            <div class="day">Tue</div>
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                            <div class="temp">Night - 25.6°C</div>
+                            <div class="temp">Day - 44.6°C</div>
+                        </div>
+
+                        <div class="weather-forecast-item">
+                            <div class="day">Wed</div>
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                            <div class="temp">Night - 25.6°C</div>
+                            <div class="temp">Day - 44.6°C</div>
+                        </div>
+
+                        <div class="weather-forecast-item">
+                            <div class="day">Thu</div>
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                            <div class="temp">Night - 25.6°C</div>
+                            <div class="temp">Day - 44.6°C</div>
+                        </div>
+
+                        <div class="weather-forecast-item">
+                            <div class="day">Fri</div>
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                            <div class="temp">Night - 25.6°C</div>
+                            <div class="temp">Day - 44.6°C</div>
+                        </div>
+                        <div class="weather-forecast-item">
+                            <div class="day">Sat</div>
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                            <div class="temp">Night - 25.6°C</div>
+                            <div class="temp">Day - 44.6°C</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="box7">seven</div> -->
+    </div>
+    <script src="Weather.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
+
+</body>
+
+</html>

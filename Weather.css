@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Baloo 2', cursive; */
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Nunito:wght@200&family=Poppins:wght@100;200;400;700&display=swap');
+body{
+    background: url("box-background.jpg") no-repeat center center/cover;
+}
+.container {
+    margin: 10px;
+    height: 97vh;
+    width: 98.5vw;
+    display: grid;
+    grid-template-columns: 130px repeat(2, 1fr) 25vw;
+    grid-template-rows: 100px 300px 1fr;
+    grid-gap: 5px;
+    flex-wrap: wrap;
+}
+
+.box {
+    /* background-color: violet; */
+}
+
+.box1 {
+    /* background-color: indigo; */
+    grid-row: 1/5;
+}
+
+.box2 {
+    /* background-color: green; */
+    grid-column: 2/4;
+    display: flex;
+}
+
+.box3 {
+    /* background-color: yellow; */
+    grid-row: 1/-1;
+    grid-column: 4/5;
+}
+
+.box4 {
+    /* background-color: orange; */
+}
+
+.box5 {
+    /* background-color: red; */
+}
+
+.box6 {
+    /* background-color: blue; */
+    grid-column: 2/5;
+}
+/* 
+.box7 {
+    background-color: pink;
+    grid-row: 3/5;
+} */
+
+/* --------------BOX1--------------- */
+.aside-left {
+    height: 100%;
+    width: 130px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin: 20px 30px;
+}
+
+.logo-name {
+    font-size: 20px;
+    margin: -15px 15px;
+}
+
+.aside-mid {
+    width: 30px;
+    height: 220px;
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+}
+.icons:hover{
+    background: palevioletred;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout {
+    margin: 0px 50px;
+    margin-bottom: 50px;
+}
+/* --------------BOX2-------------- */
+.header {
+    height: 100px;
+    width: 70vw;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    /* padding: 3px; */
+    border-radius: 50%;
+    background-color: rgb(231, 173, 231);
+    margin: 30px 30px 30px -15px;
+}
+.circle:hover{
+    background-color: rgb(233, 133, 233);
+}
+.profile {
+    width: 70px;
+    height: 70px;
+    margin: 1px 20px;
+    margin-left: 60px;
+}
+
+.left-head {
+    display: inline-flex;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.right-head {
+    display: inline-flex;
+}
+
+.search-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin:5px;
+    cursor: pointer;
+    
+}
+
+.searchbar {
+    position: relative;
+    /* left: 350px; */
+    border-radius: 10px;
+    margin: 30px;
+    padding: 7px;
+}
+
+/* --------------BOX4--------------- */
+.card1 {
+    border-radius: 25px;
+    margin: 0px 30px 50px;
+    height: 300px;
+    width: 430px;
+    background: url('card4.png');
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-blend-mode:hard-light;
+}
+
+.card1-top {
+    display: inline-flex;
+}
+
+.card1-head {
+    margin-top: 17px;
+    font-size: 20px;
+    margin-left: -10px;
+}
+
+.card1-icon {
+    height: 30px;
+    width: 30px;
+    margin: 25px;
+}
+
+.card1-mid {
+    margin: 30px;
+    display: inline-flex;
+}
+
+.card1-mid-mini {
+    height: 28px;
+    width: auto;
+    margin:2px 10px;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.description {
+    font-size: 25px;
+}
+
+.card1-bottom {
+    display: inline-flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.weather-item1 {
+    height: 70px;
+    width: 100px;
+    /* width: 120px; */
+    border: 3px solid red;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.values {
+    font-size: 30px;
+}
+.onLoading{
+    visibility: hidden;
+}
+.onLoading::after{
+    visibility: visible;
+}
+/* --------------BOX5--------------- */
+.card2 {
+    border-radius: 25px;
+    margin: 0px 30px 50px;
+    height: 300px;
+    width: 430px;
+    background: url('card2.png');
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card2-top {
+    display: inline-flex;
+}
+
+.card2-head {
+    margin-top: 17px;
+    font-size: 20px;
+    margin-left: -10px;
+}
+
+.card2-icon {
+    height: 30px;
+    width: 30px;
+    margin: 25px;
+}
+
+.card2-degree {
+    font-size: 30px;
+}
+
+.card2-mid {
+    margin: 30px;
+    display: inline-flex;
+}
+
+.card2-mid-mini {
+    height: 28px;
+    width: auto;
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px 0px 0px 15px;
+}
+.bottom-box2{
+    display: inline-flex;
+    flex-direction: column;
+    border: 3px solid yellow;
+    height: 90px;
+    width: 320px;
+    margin: 0px 55px 30px;
+    border-radius: 10px;
+}
+.card2-bottom {
+    display: inline-flex;
+    justify-content: space-around;
+    /* height: 70px;
+    width: 320px;
+    margin: 0px 55px 30px; */
+}
+.card2-box {
+    margin-top: 10px;
+}
+.line{
+    height: 5px;
+    width: 280px;
+    background: rgb(212, 145, 145);
+    margin: 12px 20px;
+    border-radius: 5px;
+}
+.loc-input{
+    height: 25px;
+    width: 70px;
+    margin-top: 25px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+    background-color: rgb(235, 228, 228);
+}
+.search-btn{
+    height: 20px;
+    width: 50px;
+    margin-top: 27px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+/* --------------BOX3--------------- */
+
+
+.current-info{
+    display: inline-flex;
+    justify-content: space-between;
+    width:350px;
+    margin: 15px;
+    /* border: 3px solid red; */
+}
+.dateTime-container .time{
+    font-size: 40px;
+}
+.dateTime-container #am-pm{
+    font-size: 20px;
+}
+.date{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.place-container{
+    text-align: end;
+}
+.place-container .time-zone{
+    font-size: 20px;
+}
+.current-info .others{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background: rgb(24, 24, 24,0.3);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.others .weather-item{
+    display: inline-flex;
+    justify-content: space-between;
+    width:180px;
+    margin-top: 3px;
+}
+.future-forecast{
+    background: rgb(24, 24, 24,0.4);
+    padding: 10px;
+    position: relative;
+    display: inline-flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.future-forecast .weather-forecast{
+    display: inline-flex;
+}
+.future-forecast .today .day{
+    padding: 5px;
+    margin-bottom: 10px;
+    background: rgb(24, 24, 24,0.6);
+    border-radius: 15px;
+    text-align: center;
+}
+.future-forecast .today .temp{
+    font-size: 18px;   
+    margin-bottom: 10px;
+}
+.future-forecast .today{
+    margin-right: 20px;
+}
+.weather-forecast .weather-forecast-item{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.weather-forecast .weather-forecast-item .temp{
+    color: rgb(224, 220, 220);
+}
+.weather-forecast .weather-forecast-item .day{
+    padding: 7px 10px;
+    background: rgb(24, 24, 24,0.6);
+    border-radius: 15px;
+    text-align: center;
+}
+.weather-forecast .weather-forecast-item .temp{
+    font-weight: 100;
+}
+
+
+/* -------------------Box6-------------- */
+.future-forecast{
+    border-radius: 20px;
+}
