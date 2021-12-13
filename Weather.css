@@ -8,7 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Nunito:wght@200&family=Poppins:wght@100;200;400;700&display=swap');
 body{
-    background: url("box-background.jpg") no-repeat center center/cover;
+    background: url("images/box-background.jpg") no-repeat center center/cover;
 }
 .container {
     margin: 10px;
@@ -21,9 +21,9 @@ body{
     flex-wrap: wrap;
 }
 
-.box {
-    /* background-color: violet; */
-}
+/* .box {
+    background-color: violet;
+} */
 
 .box1 {
     /* background-color: indigo; */
@@ -42,23 +42,18 @@ body{
     grid-column: 4/5;
 }
 
-.box4 {
-    /* background-color: orange; */
-}
+/* .box4 {
+    background-color: orange;
+}*/
 
-.box5 {
-    /* background-color: red; */
-}
+/*.box5 {
+    background-color: red;
+} */
 
 .box6 {
     /* background-color: blue; */
     grid-column: 2/5;
 }
-/* 
-.box7 {
-    background-color: pink;
-    grid-row: 3/5;
-} */
 
 /* --------------BOX1--------------- */
 .aside-left {
@@ -164,7 +159,7 @@ body{
     margin: 0px 30px 50px;
     height: 300px;
     width: 430px;
-    background: url('card4.png');
+    background: url('images/card4.png');
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
@@ -239,7 +234,7 @@ body{
     margin: 0px 30px 50px;
     height: 300px;
     width: 430px;
-    background: url('card2.png');
+    background: url('images/card2.png');
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
